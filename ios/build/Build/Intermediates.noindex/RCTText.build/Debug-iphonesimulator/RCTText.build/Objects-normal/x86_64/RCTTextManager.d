@@ -1,0 +1,34 @@
+dependencies: \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/node_modules/react-native/Libraries/Text/RCTTextManager.m \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/node_modules/react-native/Libraries/Text/RCTTextManager.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTViewManager.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTConvert.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAnimationType.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTPointerEvents.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTEventDispatcher.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/build/Build/Products/Debug-iphonesimulator/include/React/UIView+React.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTComponent.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAccessibilityManager.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView+Layout.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/node_modules/react-native/Libraries/Text/RCTShadowRawText.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/node_modules/react-native/Libraries/Text/RCTShadowText.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/node_modules/react-native/Libraries/Text/RCTText.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/node_modules/react-native/Libraries/Text/RCTTextView.h \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTView.h
