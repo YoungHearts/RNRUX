@@ -41,7 +41,7 @@ class App extends Component {
         return (
             <View style={styles.container}>
                 <Text style={styles.welcome}>
-                    主页主页打算打算大是
+                    主页主页打算打算大是APP
                 </Text>
                 <TouchableOpacity style={styles.button} onPress={this._toDetail.bind(this)}>
                     <Text style={styles.instructions}>
@@ -55,6 +55,9 @@ class App extends Component {
 
     _toDetail() {
         this.props.navigation.navigate('Detail')
+    }
+    goBack() {
+        Alert.alert('点击了按钮');
     }
 }
 

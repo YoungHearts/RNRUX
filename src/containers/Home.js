@@ -50,7 +50,15 @@ class Home extends Component {
                 </Text>
                 <TouchableOpacity style={styles.button} onPress={this._toDetail.bind(this)}>
                     <Text style={styles.instructions}>
-                        To User Screen{this.state.progress}
+                        To User Screen
+                    </Text>
+                </TouchableOpacity>
+                <Text style={styles.welcome}>
+                    去app
+                </Text>
+                <TouchableOpacity style={styles.button} onPress={this._toApp.bind(this)}>
+                    <Text style={styles.instructions}>
+                        To App Screen
                     </Text>
                 </TouchableOpacity>
 
@@ -60,6 +68,9 @@ class Home extends Component {
 
     _toDetail() {
         this.props.navigation.navigate('User')
+    }
+    _toApp() {
+        this.props.navigation.navigate('App')
     }
 }
 
