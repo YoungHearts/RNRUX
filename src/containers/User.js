@@ -8,7 +8,7 @@ import React, { Component } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity,Platform,BackHandler } from 'react-native';
 import { connect } from 'react-redux';
 import { NavigationActions } from 'react-navigation';
-import RTTextInput from '../component/RTTextInput';
+import {Input} from '../component/GEMUI';
 
 class User extends Component {
     constructor(props) {
@@ -62,7 +62,7 @@ class User extends Component {
                 <Text style={styles.welcome}>
                     User这里是个人中心
                 </Text>
-                <RTTextInput placeholder="用户名"
+                <Input placeholder="用户名"
                              status={this.state.userNameStatus}
                              onChangeText={(text) =>this._usernameJudge(text)}
                              ref={(input) => this._usernameInput = input}

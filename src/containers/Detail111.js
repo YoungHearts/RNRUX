@@ -41,7 +41,8 @@ class Detail111 extends Component {
      */
     _goBack() {
         const { routes } = this.props;
-        this.props.navigation.goBack(routes[1].key);
+        console.log(this.props.navigation);
+        // this.props.navigation.goBack(routes[1].key);
     }
 }
 

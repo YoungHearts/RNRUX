@@ -4,7 +4,8 @@
  */
 
 
-import React, {PureComponent,PropTypes} from 'react';
+import React, {PureComponent} from 'react';
+import PropTypes from 'prop-types';
 
 import {
     View,
@@ -13,18 +14,16 @@ import {
     Image
 } from 'react-native';
 
-import color from "../../Colors"
-
-import Button from "../Button/Button"
+import Button from "../../Button"
 import Text from "../Text"
 
-import leftIcon from "../images/Header/left.png"
+import Icon from 'react-native-vector-icons/Ionicons';
 
 class Header extends PureComponent {
 
     constructor(props) {
         super(props);
-        this.router=wesai.getRouter();
+        // this.router=wesai.getRouter();
     }
 
     static height=46;
@@ -52,15 +51,19 @@ class Header extends PureComponent {
         if(props.leftPress){
             props.leftPress();
         }else{
-            this.router.pop();
+            GEM.navigation.goBack();
+            // props.navigation.goBack();
         }
     }
 
     render() {
         let {props} = this;
+        let {
+            iconName,
+        } = props;
         return (
             <View>
-                {isIos && <View style={{height:20}} />}
+                {iOS && <View style={{height:20}} />}
                 <View style={[headerStyle.header]}>
                     {props.headerCenter?
                         <View style={[headerStyle.headerChildren]}>
@@ -70,9 +73,18 @@ class Header extends PureComponent {
                             <Text style={headerStyle.headerText}>{props.title}</Text>
                         </View>
                     }
-                    {props.isLeft&&<Button activeOpacity={0.5} onPress={()=>{this.leftPress()}} style={headerStyle.leftReturn}>
-                        <Image resizeMode="cover" style={headerStyle.leftImage} source={leftIcon} />
-                    </Button>}
+                    {props.isLeft&&<Button
+                        isCustom={true}
+                        customView={
+                        <Icon
+                        name='ios-arrow-back'
+                        size={30}
+                        color='white'
+                        style={headerStyle.leftReturn}
+                        />
+                    }
+                        onPress={()=>{this.leftPress()}}
+                        />}
                     {props.headerRight && <View style={headerStyle.rightStyle}>
                         {props.headerRight}
                     </View>}
@@ -81,7 +93,6 @@ class Header extends PureComponent {
         )
     }
 }
-
 const headerStyle=StyleSheet.create({
     header:{
         height:Header.height
@@ -120,6 +131,14 @@ const headerStyle=StyleSheet.create({
         right:0,
         top:0,
         justifyContent:"center",
+    },
+    iconStyle:{
+        alignSelf:'center',
+        justifyContent:'center',
+        alignItems:'center',
+        height:28,
+        width:28,
+
     }
 });
 

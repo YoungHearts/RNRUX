@@ -1,7 +1,12 @@
 # USAGE
+若没有安装yarn，请先安装
+```
+brew update
+brew install yarn
+```
 
 ```
-npm install
+yarn install
 
 react-native run-[PLATFORM]
 ```

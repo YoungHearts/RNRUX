@@ -8,6 +8,8 @@ import React, { Component } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity,Platform,BackHandler } from 'react-native';
 import { connect } from 'react-redux';
 import { NavigationActions } from 'react-navigation';
+import Button from '../component/Button';
+import {Input} from '../component/GEMUI';
 
 class Home extends Component {
     constructor(props) {
@@ -41,12 +43,20 @@ class Home extends Component {
             return true;
         }
     };
-
+    _onPress = () => {
+        console.log('点击了Button');
+    };
+    _usernameJudge = (text) => {
+        console.log(text,'onChangeText');
+    };
+    InputOnFocus = (e) => {
+        this.props.navigation.navigate('Search')
+    };
     render() {
         return (
             <View style={styles.container}>
                 <Text style={styles.welcome}>
-                    Home主页主页打算打算大是
+                    Home主页(按钮看流程)
                 </Text>
                 <TouchableOpacity style={styles.button} onPress={this._toDetail.bind(this)}>
                     <Text style={styles.instructions}>
@@ -54,13 +64,26 @@ class Home extends Component {
                     </Text>
                 </TouchableOpacity>
                 <Text style={styles.welcome}>
-                    去app
+                    搜索页
                 </Text>
-                <TouchableOpacity style={styles.button} onPress={this._toApp.bind(this)}>
-                    <Text style={styles.instructions}>
-                        To App Screen
-                    </Text>
-                </TouchableOpacity>
+                <Input placeholder="私募管理人名称"
+                             errorColor={'#ccc'}
+                             onChangeText={(text) =>this._usernameJudge(text)}
+                             onFocus={(e) =>this.InputOnFocus(e)}
+                             ref={(input) => this._usernameInput = input}
+                             textInputRef='textInput'
+                             iconName='md-search'
+                />
+                <Button
+                    backgroundColor={COLORS.appColor}
+                    raised
+                    borderRadius={5}
+                    title='按钮组件!'
+                    animationType="bounceInLeft"
+                    onPress = {this._onPress}
+                />
+
+
 
             </View>
         );
@@ -68,9 +91,6 @@ class Home extends Component {
 
     _toDetail() {
         this.props.navigation.navigate('User')
-    }
-    _toApp() {
-        this.props.navigation.navigate('App')
     }
 }
 

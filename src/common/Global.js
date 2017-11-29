@@ -40,4 +40,8 @@ global.px2dp = px2dp;
 global.Alert = Alert;
 // 网络请求
 // global.Fetch = Fetch;
+//全局属性
+global.GEM={
+
+}
 

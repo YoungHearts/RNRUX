@@ -11,7 +11,7 @@ import color from "../component/Colors"
 
 import Home from '../containers/Home';
 import User from '../containers/User';
-import App from '../containers/App';
+import Search from '../containers/Search';
 import Detail from '../containers/Detail';
 import Detail111 from '../containers/Detail111';
 
@@ -23,7 +23,9 @@ const headerOptions = {
     // headerBackTitle: null,
     headerRight: <View style={{ width: 24 }}/>
 };
-
+const StackOptions = ({navigation}) => {
+    console.log(navigation,'asdasdasdsa');
+}
 /*const StackOptions = ({navigation}) => {
     // console.log(navigation);
     let {state,goBack} = navigation;
@@ -93,7 +95,7 @@ const Routers = StackNavigator({
     MyTab: {
         screen: MyTab,
     },
-    App: { screen: App, navigationOptions: { headerTitle: 'APP', ...headerOptions } },
+    Search: { screen: Search, navigationOptions: { headerTitle: 'Search',header:null, ...headerOptions } },
     Detail: { screen: Detail, navigationOptions: { headerTitle: 'Detail', ...headerOptions } },
     Detail111: { screen: Detail111, navigationOptions: { headerTitle: 'Detail111', ...headerOptions} },
 }, {
@@ -101,7 +103,10 @@ const Routers = StackNavigator({
     initialRouteName:'MyTab',
     transitionConfig: () => ({
         screenInterpolator: CardStackStyleInterpolator.forHorizontal,
-    })
+    }),
+    navigationOptions: (nav) => (
+        GEM.navigation=nav.navigation//将导航发放到全局
+    ),
 });
 export default Routers;
 

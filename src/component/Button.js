@@ -2,7 +2,7 @@
  * Created by Rabbit on 2017/4/20.
  */
 import React from 'react';
-import { PropTypes } from 'prop-types';
+import  PropTypes  from 'prop-types';
 import {
     TouchableNativeFeedback,
     TouchableHighlight,
@@ -91,10 +91,10 @@ const Button = props => {
             />
         );
     }
-    if (!Component && Platform.OS === 'ios') {
+    if (!Component && iOS) {
         Component = TouchableHighlight;
     }
-    if (!Component && Platform.OS === 'android') {
+    if (!Component && Android) {
         Component = TouchableNativeFeedback;
     }
     if (!Component) {

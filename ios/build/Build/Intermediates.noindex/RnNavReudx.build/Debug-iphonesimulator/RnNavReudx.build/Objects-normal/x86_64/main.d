@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/yangj/Desktop/work/reactnative/react-native-redux-navigation/ios/RnNavReudx/main.m \
-  /Users/yangj/Desktop/work/reactnative/react-native-redux-navigation/ios/RnNavReudx/AppDelegate.h
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/RnNavReudx/main.m \
+  /Users/yangj/Desktop/work/reactnative/RNRUX/ios/RnNavReudx/AppDelegate.h
